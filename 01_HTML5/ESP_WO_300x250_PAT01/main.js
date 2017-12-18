@@ -8,7 +8,7 @@ var fadeTime2 = .6;
 // Sets times for frame changes - steps
 
 //var frameDelays = [0,1,1,1];
-var frameDelays = [0,1.9,5,6];
+var frameDelays = [0,2.5,2.5,2.5];
 
 var svgScale = .7
 var svgWidth = 90;
@@ -107,17 +107,13 @@ function init() {
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].End_Date.UtcValue = 1512082800000;
 
 
-
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1 = "I WANT IT";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2 = "ALL";
 
-
-
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f2_text1 = "DIESEN<br\/> FREITAG<br\/> UM 20:30 UHR";
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f2_text2 = "LIVE IM<br\/> EUROSPORT<br\/> PLAYER";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1 = "ICE HOCKEY PASS";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text2 = "€9.99";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].cta = "SIGN UP";
+
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].Default = false;
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].Active = true;
     Enabler.setDevDynamicContent(devDynamicContent);
@@ -125,8 +121,6 @@ function init() {
 
 document.getElementById('f1_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1
 document.getElementById('f1_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2;
-document.getElementById('f2_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f2_text1
-document.getElementById('f2_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f2_text2
 document.getElementById('f3_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1
 document.getElementById('f3_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text2
 document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].cta
@@ -152,10 +146,15 @@ document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicG
 
 function step1 (){
 
-  TweenLite.set(['#f1_text'], {rotation:0.01,transformOrigin:"50% 10%"});
-  TweenLite.set(['#f2_text'], {rotation:0.01,transformOrigin:"50% 40%"});
+  TweenLite.set(['#f1_text1'], {rotation:0.01,transformOrigin:"50% 30%"});
+  TweenLite.set(['#f1_text2'], {rotation:0.01,transformOrigin:"50% 40%"});
 
-    transTime = .1
+  TweenLite.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
+  TweenLite.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
+
+  TweenLite.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-207}, Quint.easeOut);
+  TweenLite.fromTo(mountain_02, 1.10, {x:0, y:0}, {delay:0.3, x:0, y:-207}, Quint.easeOut);
+  TweenLite.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
 
 
 }
@@ -163,11 +162,11 @@ function step1 (){
 function step2 (){
 
            //Show Frame 1 Copy
-          TweenLite.set('#f1_text1', {autoAlpha:1, scale:0.01});
-          TweenLite.set('#f1_text2', {autoAlpha:1});
+           TweenLite.set('#f1_text1', {autoAlpha:1, scale:0.01});
+           TweenLite.set('#f1_text2', {autoAlpha:1});
 
-          TweenLite.to('#f1_text1', 0.3, {delay:0.1, scale:1.0}, {ease: Bounce.easeOut });
-          TweenLite.fromTo('#f1_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
+           TweenLite.to('#f1_text1', 1.2, {scale:1, ease: Elastic.easeOut.config(1, 0.3), delay:0.3 });
+           TweenLite.fromTo('#f1_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
 
 }
 
@@ -176,11 +175,15 @@ function step3 (){
 
            //Hide Frame 1 Copy
 
-           TweenMax.to(['#f1_text1','#f1_text2'], fadeTime1, {autoAlpha:0,ease:Power4.easeOut})
+           TweenMax.to(['#f1_text1','#f1_text2'], 0.1, {autoAlpha:0,ease:Power4.easeOut})
 
 
            //Show Frame 2 Copy
-           TweenMax.to(['#f2_text1','#f2_text2'], fadeTime1, {opacity:1,ease:Power4.easeOut,delay:fadeTime1 })
+           TweenLite.set('#f2_text1', {autoAlpha:1});
+           TweenLite.set('#f2_text2', {autoAlpha:1});
+
+           TweenLite.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Bounce.easeOut });
+           TweenLite.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
 }
 
 
