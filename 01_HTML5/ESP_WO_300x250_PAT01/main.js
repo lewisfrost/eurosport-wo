@@ -155,7 +155,7 @@ function step1 (){
   TweenLite.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-207}, Quint.easeOut);
   TweenLite.fromTo(mountain_02, 1.10, {x:0, y:0}, {delay:0.3, x:0, y:-207}, Quint.easeOut);
   TweenLite.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
-
+  TweenLite.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
 
 }
 
