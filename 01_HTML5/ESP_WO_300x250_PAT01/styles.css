@@ -112,6 +112,7 @@ video {
     text-align: center;
     width:300px;
     height:50px;
+
 }
 
 #f1_text2 {
@@ -124,6 +125,7 @@ video {
     width:300px;
     height:50px;
     color: #fae500;
+
 }
 
 
@@ -170,11 +172,17 @@ video {
 
 }
 #f3_text2 {
-    position:relative;
+  position:relative;
     font-size: 40px;
     line-height: 10px;
+    top: 43px;
 
     text-align: center;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+
 
     color:#fae500;
 
@@ -201,12 +209,14 @@ video {
 
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     font-size: 30px;
+    line-height: 26px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+
+    padding-left: 23px;
+    padding-right: 23px;
 
     background-color: none;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-bottom: 0px;
     border:2px solid #fae500;
     position:relative;

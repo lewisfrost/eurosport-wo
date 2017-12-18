@@ -2,6 +2,9 @@ var startTime;
 var fadeTime1 = .2;
 var fadeTime2 = .6;
 
+//var easeIn			= 'Bounce.easeOut';
+
+
 // Sets times for frame changes - steps
 
 //var frameDelays = [0,1,1,1];
@@ -149,9 +152,10 @@ document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicG
 
 function step1 (){
 
-           //Show Frame 1 Animation
+  TweenLite.set(['#f1_text'], {rotation:0.01,transformOrigin:"50% 10%"});
+  TweenLite.set(['#f2_text'], {rotation:0.01,transformOrigin:"50% 40%"});
 
-    transTime = .3
+    transTime = .1
 
 
 }
@@ -159,10 +163,11 @@ function step1 (){
 function step2 (){
 
            //Show Frame 1 Copy
+          TweenLite.set('#f1_text1', {autoAlpha:1, scale:0.01});
+          TweenLite.set('#f1_text2', {autoAlpha:1});
 
-          TweenMax.to(['#f1_text1','#f1_text2'],0.01,{opacity:1})
-          TweenMax.to(['#f1_text1'], 1.0, {autoAlpha:1,ease:Bounce.easeOut})
-          TweenMax.to(['#f1_text2'], 2.0, {autoAlpha:1,ease:Bounce.easeOut})
+          TweenLite.to('#f1_text1', 0.3, {delay:0.1, scale:1.0}, {ease: Bounce.easeOut });
+          TweenLite.fromTo('#f1_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
 
 }
 
@@ -170,7 +175,6 @@ function step2 (){
 function step3 (){
 
            //Hide Frame 1 Copy
-           TweenMax.to(['#f1_text1','#f1_text2'], fadeTime1, {autoAlpha:0,ease:Power4.easeOut})
 
            TweenMax.to(['#f1_text1','#f1_text2'], fadeTime1, {autoAlpha:0,ease:Power4.easeOut})
 
