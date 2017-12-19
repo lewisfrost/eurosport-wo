@@ -1,6 +1,7 @@
 var startTime;
 var fadeTime1 = .2;
 var fadeTime2 = .6;
+var fadeTime3 = .6;
 
 //var easeIn			= 'Bounce.easeOut';
 
@@ -8,7 +9,7 @@ var fadeTime2 = .6;
 // Sets times for frame changes - steps
 
 //var frameDelays = [0,1,1,1];
-var frameDelays = [0,2.5,2.5,2.5];
+var frameDelays = [0,1.3,2.5,3.5,2.3,2.3,2.8,3.2];
 
 var svgScale = .7
 var svgWidth = 90;
@@ -17,11 +18,6 @@ var svgHeight = 100;
 var svgNewX = -60
 var svgNewY = -35
 var svgNewScale = 3.5
-
-
-
-
-
 
 
 var width = document.getElementById('main_container').offsetWidth;
@@ -110,8 +106,16 @@ function init() {
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1 = "I WANT IT";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2 = "ALL";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1 = "ICE HOCKEY PASS";
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text2 = "€9.99";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1 = "ICE HOCKEY";
+
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text1 = "EVERY SECOND OF THE";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text2 = "ICE HOCKEY";
+
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EXCLUSIVELY ON";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text2 = "EUROSPORT PLAYER.";
+
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1 = "ICE HOCKEY PASS";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text2 = "€9.99";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].cta = "SIGN UP";
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].Default = false;
@@ -119,22 +123,19 @@ function init() {
     Enabler.setDevDynamicContent(devDynamicContent);
 
 
-document.getElementById('f1_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1
-document.getElementById('f1_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2;
-document.getElementById('f3_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1
-document.getElementById('f3_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text2
-document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].cta
+    document.getElementById('f1_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1
+    document.getElementById('f1_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2
+    document.getElementById('f3_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1
+    document.getElementById('f5_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text1
+    document.getElementById('f5_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text2
+    document.getElementById('f6_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1
+    document.getElementById('f6_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text2
+    document.getElementById('f7_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1
+    document.getElementById('f7_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text2
+    document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].cta
 
 
-
-
-
- document.getElementById('main_container').style.visibility = 'visible';
-
-
-
-
-
+    document.getElementById('main_container').style.visibility = 'visible';
 
 
 
@@ -143,72 +144,151 @@ document.getElementById('ctaText').innerHTML = dynamicContent.BundesligaDynamicG
 }
 
 
-
 function step1 (){
 
-  TweenLite.set(['#f1_text1'], {rotation:0.01,transformOrigin:"50% 30%"});
-  TweenLite.set(['#f1_text2'], {rotation:0.01,transformOrigin:"50% 40%"});
+           TweenMax.set(['#f1_text1'], {rotation:0.01,transformOrigin:"50% 35%"});
+           TweenMax.set(['#f1_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
-  TweenLite.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
-  TweenLite.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
+           TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
+           TweenMax.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
-  TweenLite.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-207}, Quint.easeOut);
-  TweenLite.fromTo(mountain_02, 1.10, {x:0, y:0}, {delay:0.3, x:0, y:-207}, Quint.easeOut);
-  TweenLite.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
-  TweenLite.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
+           TweenMax.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-212}, Quint.easeOut);
+           TweenMax.fromTo(mountain_02, 1.10, {x:2, y:0}, {delay:0.3, x:2, y:-207}, Quint.easeOut);
+           TweenMax.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
+           TweenMax.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
 
 }
 
 function step2 (){
 
            //Show Frame 1 Copy
-           TweenLite.set('#f1_text1', {autoAlpha:1, scale:0.01});
-           TweenLite.set('#f1_text2', {autoAlpha:1});
 
-           TweenLite.to('#f1_text1', 1.2, {scale:1, ease: Elastic.easeOut.config(1, 0.3), delay:0.3 });
-           TweenLite.fromTo('#f1_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
+           TweenMax.set('#f1_text1', {autoAlpha:1, scale:0.01});
+           TweenMax.set('#f1_text2', {autoAlpha:1});
 
+           TweenMax.to('#f1_text1', 0.8, {scale:1, ease: Bounce.easeOut, delay:0.01 });
+           TweenMax.fromTo('#f1_text2', 0.6, {scale: 0.01}, {delay:0.60, scale:1.0}, {ease: Bounce.easeOut });
 }
-
 
 function step3 (){
 
            //Hide Frame 1 Copy
+           TweenMax.set('#f2_text1', {autoAlpha:1});
+           TweenMax.set('#f2_text2', {autoAlpha:1});
 
-           TweenMax.to(['#f1_text1','#f1_text2'], 0.1, {autoAlpha:0,ease:Power4.easeOut})
+           TweenMax.to(['#f1_text1','#f1_text2'], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
+           TweenMax.to(mountain_01, 1.30, {x:0, y:212}, Quint.easeIn);
+           TweenMax.to(mountain_02, 1.10, {delay:0, x:2, y:207}, Quint.easeIn);
+           TweenMax.to(mountain_03, 1.10, {delay:0, x:0, y:237}, Quint.easeIn);
+           TweenMax.to(mountain_04, 0.90, {delay:0, x:0, y:82}, Quint.easeIn);
 
            //Show Frame 2 Copy
-           TweenLite.set('#f2_text1', {autoAlpha:1});
-           TweenLite.set('#f2_text2', {autoAlpha:1});
 
-           TweenLite.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Bounce.easeOut });
-           TweenLite.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:0.4, scale:1.0}, {ease: Bounce.easeOut });
+           TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
+           TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
+           TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
+
+           TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
 }
-
 
 function step4 (){
 
-            var tl = new TimelineMax();
+           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
-           //Hide Frame  2
-           tl.add(TweenMax.to(['#f2_text1','#f2_text2'], fadeTime1, {autoAlpha: 0}))
+           TweenMax.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-212}, Quint.easeOut);
+           TweenMax.fromTo(mountain_02, 1.10, {x:2, y:0}, {delay:0.3, x:2, y:-207}, Quint.easeOut);
+           TweenMax.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
+           TweenMax.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
 
-           //Show Frame 3
+           TweenMax.set(['#f3_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f3_text1'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f3_text1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+
+}
+
+function step5 (){
+
+           TweenMax.to(['#f3_text1'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+
+           TweenMax.set(['#f4_icon'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f4_icon'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f4_icon'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+
+}
+
+function step6 (){
+
+           TweenMax.to(['#f4_icon'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+
+           TweenMax.set(['#f5_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
+           TweenMax.set(['#f5_text1'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f5_text1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+
+           TweenMax.set(['#f5_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f5_text2'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f5_text2'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.6 });
+
+}
+
+function step7 (){
+
+           TweenMax.to(['#f5_text1','#f5_text2'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+
+           TweenMax.to(mountain_01, 1.30, {x:0, y:212}, Quint.easeIn);
+           TweenMax.to(mountain_02, 1.10, {delay:0, x:2, y:207}, Quint.easeIn);
+           TweenMax.to(mountain_03, 1.10, {delay:0, x:0, y:237}, Quint.easeIn);
+           TweenMax.to(mountain_04, 0.90, {delay:0, x:0, y:82}, Quint.easeIn);
+
+           TweenMax.set(['#f6_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
+           TweenMax.set(['#f6_text1'], {autoAlpha:1 , delay:0.5});
+           TweenMax.to(['#f6_text1'], 0.8, {y:-30, ease: Quint.easeOut, delay:0.5 });
+
+           TweenMax.set(['#f6_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f6_text2'], {autoAlpha:1 ,delay:1.3});
+           TweenMax.to(['#f6_text2'], 0.8, {y:-28, ease: Quint.easeOut, delay:1.3 });
+
+}
+
+function step8 (){
+
+           var tl = new TimelineMax();
 
 
+           TweenMax.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-212}, Quint.easeOut);
+           TweenMax.fromTo(mountain_02, 1.10, {x:2, y:0}, {delay:0.3, x:2, y:-207}, Quint.easeOut);
+           TweenMax.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
+           TweenMax.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
 
 
-           tl.add(TweenMax.to(['#f3_text1','#f3_text2'], fadeTime2, {
-               opacity: 1,delay:-fadeTime2/2,
-               ease: Power4.easeOut
-           }))
+           //Hide Frame  3
+           TweenMax.to(['#f6_text1','#f6_text2'], 0.01, {autoAlpha:0, ease: Quint.easeOut, delay:0.5 });
 
-           tl.add(TweenMax.to(['#cta'], fadeTime2 / 2, {
-               opacity: 1,delay:-fadeTime2,
+
+           //Show Frame 4
+
+           TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
+           TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
+           TweenMax.to(['#f7_text1'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.6 });
+
+           TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
+           TweenMax.to(['#f7_text2'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.4 });
+
+           TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
+           TweenMax.set(['#cta'], {autoAlpha:1, scale:0.01});
+
+           tl.add(TweenMax.to(['#cta'], 0.6, {
+               opacity: 1, delay:2.3,
+               scale:1,
+               ease: Quint.easeOut,
                onComplete: endAnimation
            }))
 }
+
+
 
 
 
