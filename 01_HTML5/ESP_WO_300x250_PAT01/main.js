@@ -187,25 +187,7 @@ function step3 (){
 
            //Show Frame 2 Copy
 
-           TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
-           TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
-           TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
 
-           TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
-}
-
-function step4 (){
-
-           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
-
-           TweenMax.fromTo(mountain_01, 1.30, {x:0, y:0}, {x:0, y:-212}, Quint.easeOut);
-           TweenMax.fromTo(mountain_02, 1.10, {x:2, y:0}, {delay:0.3, x:2, y:-207}, Quint.easeOut);
-           TweenMax.fromTo(mountain_03, 1.10, {x:0, y:0}, {delay:0.4, x:0, y:-237}, Quint.easeOut);
-           TweenMax.fromTo(mountain_04, 0.90, {x:0, y:0}, {delay:0.5, x:0, y:-82}, Quint.easeOut);
-
-           TweenMax.set(['#f3_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(['#f3_text1'], {autoAlpha:1, scale:0.01});
-           TweenMax.to(['#f3_text1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
 
 }
 
