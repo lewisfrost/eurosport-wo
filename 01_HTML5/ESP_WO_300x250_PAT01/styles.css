@@ -123,7 +123,15 @@ video {
     z-index: 100;
     display: block;
     top:250px;
+<<<<<<< HEAD
     left:201px;
+=======
+<<<<<<< HEAD
+    left:201px;
+=======
+    left:200px;
+>>>>>>> d66aae80f2dd4493ea9bd56a5016ceed9594933e
+>>>>>>> cd03cd8e516bbdc2a10562afff816ea0e055ae1c
     width:100px;
     height:82px;
     align: left;
