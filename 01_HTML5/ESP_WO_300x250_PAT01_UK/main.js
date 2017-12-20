@@ -3,14 +3,12 @@ var fadeTime1 = .2;
 var fadeTime2 = .6;
 var fadeTime3 = .6;
 
-//var easeIn			= 'Bounce.easeOut';
-
+loopcount=0;
+numOfLoops=2;
 
 // Sets times for frame changes - steps
-
 //var frameDelays = [0,.5,.5,.5,.5,.5,.5,.5];
-
-var frameDelays = [0,1.0,2.5,2.5,1.5,1.8,1.9,2.5];
+var frameDelays = [0,1.0,2.1,2.4,1.5,1.7,2.1,2.6];
 
 var svgScale = .7
 var svgWidth = 90;
@@ -29,6 +27,8 @@ var svgY = height / 2 - (svgHeight*svgScale / 2)
 
 
 var bgExit = document.getElementById('background-exit');
+
+
 
 
 /*
@@ -71,10 +71,6 @@ window.onload = function(){
     Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
   }
 };
-
-
-
-
 
 
 /*
@@ -137,6 +133,7 @@ function init() {
 
 
     document.getElementById('main_container').style.visibility = 'visible';
+
 
 
 
@@ -271,25 +268,22 @@ function step8 (){
 
            TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
-           TweenMax.to(['#f7_text1'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.0 });
+           TweenMax.to(['#f7_text1'], 0.6, {y:-22, ease: Quint.easeOut, delay:1.2 });
 
            TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
-           TweenMax.to(['#f7_text2'], 0.6, {y:-22, ease: Quint.easeOut, delay:1.9 });
+           TweenMax.to(['#f7_text2'], 0.6, {y:-22, ease: Quint.easeOut, delay:1.1 });
 
            TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
            TweenMax.set(['#cta'], {autoAlpha:1, scale:0.001});
 
            tl.add(TweenMax.to(['#cta'], 0.6, {
-               opacity: 1, delay:1.8,
+               opacity: 1, delay:1.0,
                scale:1,
                ease: Quint.easeOut,
                onComplete: endAnimation
            }))
 }
-
-
-
 
 
 /*
@@ -319,4 +313,22 @@ function endAnimation() {
 
     console.log('Animation duration: ' + ((endTime - startTime) / 1000) + ' seconds');
 
+    if (loopcount<numOfLoops){
+        loopcount++;
+        TweenMax.delayedCall(2, fadeOut);
+    }
+
+}
+function fadeOut(){
+
+    //Fade Out Tween Code !!!!!!!
+
+    TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+
+    TweenMax.to(mountain_01, 2.30, {x:0, y:212}, Quint.easeIn);
+    TweenMax.to(mountain_02, 1.25, {delay:0, x:2, y:207}, Quint.easeIn);
+    TweenMax.to(mountain_03, 0.95, {delay:0, x:0, y:237}, Quint.easeIn);
+    TweenMax.to(mountain_04, 0.60, {delay:0, x:0, y:172}, Quint.easeIn);
+
+    TweenMax.delayedCall(1, startAnim);
 }
