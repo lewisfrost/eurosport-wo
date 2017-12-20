@@ -10,7 +10,7 @@ var fadeTime3 = .6;
 
 //var frameDelays = [0,.5,.5,.5,.5,.5,.5,.5];
 
-var frameDelays = [0,1.3,2.5,3.5,2.3,2.3,2.8,3.2];
+var frameDelays = [0,1.0,2.5,2.5,1.5,1.8,1.9,2.5];
 
 var svgScale = .7
 var svgWidth = 90;
@@ -170,7 +170,7 @@ function step2 (){
            TweenMax.set('#f1_text2', {autoAlpha:1});
 
            TweenMax.to('#f1_text1', 0.8, {scale:1, ease: Bounce.easeOut, delay:0.01 });
-           TweenMax.fromTo('#f1_text2', 0.6, {scale: 0.01}, {delay:0.60, scale:1.0}, {ease: Bounce.easeOut });
+           TweenMax.fromTo('#f1_text2', 0.6, {scale: 0.01}, {delay:0.40, scale:1.0}, {ease: Quint.easeOut });
 }
 
 function step3 (){
@@ -272,17 +272,17 @@ function step8 (){
 
            TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
-           TweenMax.to(['#f7_text1'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.6 });
+           TweenMax.to(['#f7_text1'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.1 });
 
            TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
-           TweenMax.to(['#f7_text2'], 0.6, {y:-22, ease: Quint.easeOut, delay:2.4 });
+           TweenMax.to(['#f7_text2'], 0.6, {y:-22, ease: Quint.easeOut, delay:1.9 });
 
            TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
            TweenMax.set(['#cta'], {autoAlpha:1, scale:0.001});
 
            tl.add(TweenMax.to(['#cta'], 0.6, {
-               opacity: 1, delay:2.3,
+               opacity: 1, delay:1.8,
                scale:1,
                ease: Quint.easeOut,
                onComplete: endAnimation
