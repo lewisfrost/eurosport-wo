@@ -43,8 +43,8 @@ video {
 
 #loading_dc, #main_container {
 
-    width:300px;
-    height:250px;
+    width:160px;
+    height:600px;
 }
 
 #loading_dc {
@@ -89,10 +89,10 @@ video {
     position: absolute;
     z-index: 50;
     display: block;
-    top:250px;
-    left:-75px;
-    width:269px;
-    height:207px;
+    top:600px;
+    left:-105px;
+    width:376px;
+    height:289px;
     align: left;
 }
 
@@ -100,10 +100,10 @@ video {
     position: absolute;
     z-index: 50;
     display: block;
-    top:250px;
-    left:-73px;
-    width:373px;
-    height:207px;
+    top:600px;
+    left:-102px;
+    width:522px;
+    height:289px;
     align: left;
 }
 
@@ -111,10 +111,10 @@ video {
     position: absolute;
     z-index: 50;
     display: block;
-    top:250px;
-    left:-66px;
-    width:368px;
-    height:239px;
+    top:600px;
+    left:-92px;
+    width:515px;
+    height:334px;
     align: left;
 }
 
@@ -122,14 +122,14 @@ video {
     position: absolute;
     z-index: 100;
     display: block;
-    top:250px;
+    top:600px;
     left:201px;
     width:100px;
     height:82px;
     align: left;
 }
 
-#f1_text1, #f1_text2, #f2_text1, #lineOne, #lineTwo, #f2_text2, #f3_icon1, #f4_icon2, #f5_icon3, #f6_text1, #f7_text1, #f7_text2, #cta{
+#f1_text1, #f1_text2, #f2_text1, #lineOne, #lineTwo, #lineThree, #lineFour, #f2_text2, #f3_icon1, #f4_icon2, #f5_icon3, #f6_text1, #f7_text1, #f7_text2, #cta{
   opacity:0;
 }
 
@@ -147,9 +147,9 @@ video {
     line-height: 36px;
     letter-spacing: 2.0px;
     z-index: 300;
-    top: 39px;
+    top: 128px;
     text-align: center;
-    width:300px;
+    width:160px;
     height:50px;
 }
 
@@ -159,9 +159,9 @@ video {
     line-height: 65px;
     letter-spacing: 8.0px;
     z-index: 300;
-    top: 84px;
+    top: 173px;
     text-align: center;
-    width:300px;
+    width:160px;
     height:50px;
     color: #fae500;
 }
@@ -170,30 +170,32 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 63px;
-    left: 65px;
-    width:170px;
-    height:32px;
+    left: 29px;
+    right: 29px;
+    width: 102px;
+    height:110px;
+    top: 60px;
 }
 
 #f2_text2 {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 95px;
-    left: 18px;
-    width:264px;
-    height:32px;
+    left: 29px;
+    right: 29px;
+    width: 102px;
+    height:130px;
+    top: 185px;
 }
 
 #lineOne {
     position: absolute;
     z-index: 900;
     display: block;
-    width: 35px;
+    width: 50px;
 	  height: 2px;
-	  top: 78px;
-	  left: 25px;
+	  top: 52px;
+	  left: 30px;
 	  background-color: rgba(255,255,255,1);
 }
 
@@ -201,33 +203,56 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    width: 35px;
+    width: 50px;
 	  height: 2px;
-	  top: 78px;
-	  left: 240px;
+	  top: 52px;
+	  left: 80px;
 	  background-color: rgba(255,255,255,1);
 }
+
+#lineThree {
+    position: absolute;
+    z-index: 900;
+    display: block;
+    width: 50px;
+	  height: 2px;
+	  top: 175px;
+	  left: 30px;
+	  background-color: rgba(255,255,255,1);
+}
+
+#lineFour {
+    position: absolute;
+    z-index: 900;
+    display: block;
+    width: 50px;
+	  height: 2px;
+	  top: 175px;
+	  left: 80px;
+	  background-color: rgba(255,255,255,1);
+}
+
 
 #f3_icon1 {
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
     font-size: 62px;
     letter-spacing: 1.3px;
-    line-height: 10px;
-    top: 95px;
+    line-height: 54px;
     color:#fae500;
     text-align: center;
-    right: 25px;
-    left: 25px;
-    width: 250px;
+    right: 6px;
+    left: 6px;
+    width: 148px;
+    top: 133px;
 }
 
 #f4_icon2 {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 28px;
-    width:154px;
+    top: 123px;
+    width:148px;
     height:125px;
     left: 50%;
     -webkit-transform: translate(-50%,0);
@@ -238,28 +263,29 @@ video {
 #f5_icon3 {
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
-    font-size: 39px;
+    font-size: 42px;
     letter-spacing: 1.3px;
-    line-height: 39px;
+    line-height: 42px;
+    color:#fae500;
     text-align: center;
-    top: 63px;
-    right: 20px;
-    left: 20px;
-    width: 260px;
-    color:#ffffff;
+    right: 10px;
+    left: 10px;
+    width: 140px;
+    color: #ffffff;
+    top: 120px;
 }
 
 #f6_text1{
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
-    font-size: 39px;
-    letter-spacing: 1.3px;
-    line-height: 39px;
+    font-size: 33px;
+    letter-spacing: 1.0px;
+    line-height: 33px;
     text-align: center;
-    right: 20px;
-    left: 20px;
-    width: 260px;
-    top: 93px;
+    right: 6px;
+    left: 6px;
+    width: 148px;
+    top: 181px;
     color:#fae500;
 }
 
@@ -271,32 +297,32 @@ video {
 }
 
 #f7_text1 {
-    font-size: 39px;
+    font-size: 42px;
     letter-spacing: 1.3px;
-    line-height: 10px;
+    line-height: 42px;
     text-align: center;
-    top: 84px;
-    right: 20px;
-    left: 20px;
-    width: 260px;
+    top: 152px;
+    right: 10px;
+    left: 10px;
+    width: 140px;
 }
 
 #f7_text2 {
-    font-size: 40px;
+    font-size: 42px;
     letter-spacing: 1.3px;
     line-height: 10px;
     text-align: center;
-    top: 122px;
-    right: 20px;
-    left: 20px;
-    width: 260px;
+    top: 251px;
+    right: 10px;
+    left: 10px;
+    width: 140px;
     color:#fae500;
 }
 
 #ctaText {
     z-index: 300;
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
-    font-size: 26px;
+    font-size: 32px;
     line-height: 27px;
     letter-spacing: 1.3px;
     text-align: center;
@@ -311,7 +337,7 @@ video {
 
 #cta {
   z-index: 300;
-  top:125px;
+  top:228px;
   position: relative;
   display: inline-block;
   left: 50%;
@@ -333,9 +359,9 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 183px;
-    left: 76px;
-    width:150px;
+    top: 538px;
+    left: 10px;
+    width:140px;
     height:52px;
 }
 
