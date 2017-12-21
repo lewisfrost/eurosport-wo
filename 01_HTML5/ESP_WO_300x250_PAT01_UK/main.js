@@ -103,10 +103,10 @@ function init() {
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1 = "I WANT IT";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2 = "ALL";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1 = "ICE HOCKEY";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_icon1 = "ICE HOCKEY";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text1 = "EVERY SECOND OF THE";
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text2 = "ICE HOCKEY";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3A = "EVERY SECOND OF THE";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3B = "ICE HOCKEY";
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EXCLUSIVELY ON";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text2 = "EUROSPORT PLAYER";
@@ -122,9 +122,9 @@ function init() {
 
     document.getElementById('f1_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text1
     document.getElementById('f1_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f1_text2
-    document.getElementById('f3_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_text1
-    document.getElementById('f5_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text1
-    document.getElementById('f5_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_text2
+    document.getElementById('f3_icon1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_icon1
+    document.getElementById('f5_icon3A').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3A
+    document.getElementById('f5_icon3B').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3B
     document.getElementById('f6_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1
     document.getElementById('f6_text2').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text2
     document.getElementById('f7_text1').innerHTML = dynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1
@@ -201,39 +201,39 @@ function step4 (){
            TweenMax.fromTo(mountain_03, 0.75, {x:0, y:0}, {delay:0.45, x:0, y:-187}, Quint.easeOut);
            TweenMax.fromTo(mountain_04, 0.60, {x:0, y:0}, {delay:0.5, x:0, y:-32}, Quint.easeOut);
 
-           TweenMax.set(['#f3_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(['#f3_text1'], {autoAlpha:1, scale:0.01});
-           TweenMax.to(['#f3_text1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+           TweenMax.set(['#f3_icon1'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f3_icon1'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f3_icon1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
 
 }
 
 function step5 (){
 
-           TweenMax.to(['#f3_text1'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+           TweenMax.to(['#f3_icon1'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
 
-           TweenMax.set(['#f4_icon'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(['#f4_icon'], {autoAlpha:1, scale:0.01});
-           TweenMax.to(['#f4_icon'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+           TweenMax.set(['#f4_icon2'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f4_icon2'], {autoAlpha:1, scale:0.01});
+           TweenMax.to(['#f4_icon2'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
 
 }
 
 function step6 (){
 
-           TweenMax.to(['#f4_icon'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+           TweenMax.to(['#f4_icon2'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
 
-           TweenMax.set(['#f5_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
-           TweenMax.set(['#f5_text1'], {autoAlpha:1, scale:0.001});
-           TweenMax.to(['#f5_text1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
+           TweenMax.set(['#f5_icon3A'], {rotation:0.01,transformOrigin:"50% 40%"});
+           TweenMax.set(['#f5_icon3A'], {autoAlpha:1, scale:0.001});
+           TweenMax.to(['#f5_icon3A'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
 
-           TweenMax.set(['#f5_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(['#f5_text2'], {autoAlpha:1, scale:0.001});
-           TweenMax.to(['#f5_text2'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.6 });
+           TweenMax.set(['#f5_icon3B'], {rotation:0.01,transformOrigin:"50% 50%"});
+           TweenMax.set(['#f5_icon3B'], {autoAlpha:1, scale:0.001});
+           TweenMax.to(['#f5_icon3B'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.6 });
 
 }
 
 function step7 (){
 
-           TweenMax.to(['#f5_text1','#f5_text2'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
+           TweenMax.to(['#f5_icon3A','#f5_icon3B'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
 
            TweenMax.to(mountain_01, 3.30, {x:0, y:212}, Quint.easeIn);
            TweenMax.to(mountain_02, 2.25, {delay:0, x:2, y:207}, Quint.easeIn);
