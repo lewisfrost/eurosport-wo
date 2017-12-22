@@ -43,7 +43,7 @@ video {
 
 #loading_dc, #main_container {
 
-    width:320px;
+    width:300px;
     height:50px;
 }
 
@@ -127,7 +127,7 @@ video {
     z-index: 900;
     display: block;
     top: 10px;
-    left: 155px;
+    left: 148px;
     width:92px;
     height:12px;
 }
@@ -137,7 +137,7 @@ video {
     z-index: 900;
     display: block;
     top: 23px;
-    left: 133px;
+    left: 126px;
     width:136px;
     height:17px;
 }
@@ -149,7 +149,7 @@ video {
     width: 18px;
 	  height: 1px;
 	  top: 15px;
-	  left: 135px;
+	  left: 128px;
 	  background-color: rgba(255,255,255,1);
 }
 
@@ -160,7 +160,7 @@ video {
     width: 18px;
 	  height: 1px;
 	  top: 15px;
-	  left: 249px;
+	  left: 242px;
 	  background-color: rgba(255,255,255,1);
 }
 
@@ -185,7 +185,7 @@ video {
     top: 4px;
     width: 60px;
     height: 42px;
-    left: 101px;
+    left: 99px;
 }
 
 #f5_text1 {
@@ -196,9 +196,9 @@ video {
     line-height: 10px;
     text-align: center;
     top: 10px;
-    right: 20px;
-    left: 165px;
-    width: 135px;
+    right: 15px;
+    left: 152px;
+    width: 143px;
 }
 
 #f5_text2 {
@@ -210,9 +210,9 @@ video {
     top: 31px;
     color:#fae500;
     text-align: center;
-    right: 20px;
-    left: 165px;
-    width: 135px;
+    right: 15px;
+    left: 152px;
+    width: 143px;
     color: #fae500;
 }
 
@@ -224,9 +224,9 @@ video {
     letter-spacing: 1.3px;
     line-height: 10px;
     text-align: center;
-    right: 20px;
-    left: 107px;
-    width: 193px;
+    right: 15px;
+    left: 102px;
+    width: 183px;
     top: 60px;
 }
 
@@ -238,9 +238,9 @@ video {
     letter-spacing: 1.3px;
     line-height: 10px;
     text-align: center;
-    right: 20px;
-    left: 107px;
-    width: 193px;
+    right: 15px;
+    left: 102px;
+    width: 183px;
     top: 81px;
 }
 
@@ -257,7 +257,7 @@ video {
     line-height: 10px;
     text-align: right;
     top: 21px;
-    right: 88px;
+    right: 86px;
     left: 20px;
 }
 
@@ -267,7 +267,7 @@ video {
     line-height: 10px;
     text-align: right;
     top: 21px;
-    right: 58px;
+    right: 56px;
     left: 20px;
     color:#fae500;
 }
@@ -293,7 +293,7 @@ video {
   top:14px;
   position: absolute;
   display: inline-block;
-  right: 12px;
+  right: 10px;
 }
 
 .retina {
