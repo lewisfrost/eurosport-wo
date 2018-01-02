@@ -118,16 +118,6 @@ video {
     align: left;
 }
 
-#mountain_04 {
-    position: absolute;
-    z-index: 100;
-    display: block;
-    top:600px;
-    left:201px;
-    width:100px;
-    height:82px;
-    align: left;
-}
 
 #f1_text1, #f1_text2, #f2_text1, #lineOne, #lineTwo, #lineThree, #lineFour, #f2_text2, #f3_icon1, #f4_icon2, #f5_icon3, #f6_text1, #f7_text1, #f8_text1, #f8_text2, #cta{
   opacity:0;

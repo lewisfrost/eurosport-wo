@@ -230,6 +230,12 @@ video {
     top: 60px;
 }
 
+#f7_text1, #f7_text2 {
+    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
+    z-index: 300;
+    color:#ffffff;
+}
+
 #f6_text2{
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
@@ -245,44 +251,43 @@ video {
 }
 
 
-#f7_text1, #f7_text2 {
-    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
-    z-index: 300;
-    color:#ffffff;
-}
-
 #f7_text1 {
-    font-size: 15px;
+    z-index: 300;
+    font-size: 20px;
     letter-spacing: 1.2px;
     line-height: 10px;
-    text-align: right;
-    top: 21px;
-    right: 86px;
-    left: 20px;
+    text-align: center;
+    top: 13px;
+    right: 0px;
+    left: 80px;
+    width: 220px;
+    color: #FFFFFF;
 }
 
 #f7_text2 {
-    font-size: 15px;
+    z-index: 300;
+    font-size: 20px;
     letter-spacing: 1.2px;
     line-height: 10px;
-    text-align: right;
-    top: 21px;
-    right: 56px;
-    left: 20px;
-    color:#fae500;
+    text-align: center;
+    top: 31px;
+    right: 0px;
+    left: 80px;
+    width: 220px;
+    color: #fae500;
 }
 
 #ctaText {
     z-index: 300;
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 13px;
     letter-spacing: 1.2px;
     text-align: center;
     padding-left: 13px;
     padding-right: 13px;
     background-color: none;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-bottom: 1px;
     border:2px solid #fae500;
     position:relative;
@@ -290,11 +295,12 @@ video {
 
 #cta {
   z-index: 300;
-  top:14px;
+  top:13px;
   position: absolute;
   display: inline-block;
   right: 10px;
 }
+
 
 .retina {
   -webkit-transform: scale(0.5);

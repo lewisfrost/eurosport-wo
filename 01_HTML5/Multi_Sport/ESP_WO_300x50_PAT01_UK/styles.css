@@ -202,29 +202,44 @@ video {
     color:#ffffff;
 }
 
+#f6_text2{
+    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
+    z-index: 300;
+    color:#fae500;
+    font-size: 28px;
+    letter-spacing: 1.3px;
+    line-height: 10px;
+    text-align: center;
+    right: 15px;
+    left: 102px;
+    width: 183px;
+    top: 81px;
+}
+
+
 #f7_text1 {
     z-index: 300;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.2px;
     line-height: 10px;
     text-align: center;
-    top: 12px;
+    top: 13px;
     right: 0px;
     left: 80px;
-    width: 220px;
+    width: 200px;
     color: #FFFFFF;
 }
 
 #f7_text2 {
     z-index: 300;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.2px;
     line-height: 10px;
     text-align: center;
-    top: 32px;
+    top: 31px;
     right: 0px;
     left: 80px;
-    width: 220px;
+    width: 200px;
     color: #fae500;
 }
 
@@ -249,8 +264,9 @@ video {
   top:13px;
   position: absolute;
   display: inline-block;
-  right: 20px;
+  right: 10px;
 }
+
 
 .retina {
   -webkit-transform: scale(0.5);

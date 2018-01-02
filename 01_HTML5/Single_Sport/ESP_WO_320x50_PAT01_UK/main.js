@@ -200,11 +200,11 @@ function step4 (){
 
            TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
-           TweenMax.to(['#f7_text1'], 0.6, {x:-27, ease: Quint.easeOut, delay:1.5 });
+           TweenMax.to(['#f7_text1'], 0.6, {x:-32, ease: Quint.easeOut, delay:1.5 });
 
            TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
-           TweenMax.to(['#f7_text2'], 0.6, {x:-27, ease: Quint.easeOut, delay:1.4 });
+           TweenMax.to(['#f7_text2'], 0.6, {x:-32, ease: Quint.easeOut, delay:1.4 });
 
            TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
            TweenMax.set(['#cta'], {autoAlpha:1, scale:0.001});
@@ -256,8 +256,6 @@ function fadeOut(){
     //Fade Out Tween Code !!!!!!!
     TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
     TweenMax.to(['#logo'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0. });
-    TweenMax.to(['#f7_text1'], 0.6, {x:27, ease: Quint.easeOut, delay:1 });
-    TweenMax.to(['#f7_text2'], 0.6, {x:27, ease: Quint.easeOut, delay:1 });
 
     TweenMax.delayedCall(1, startAnim);
 }
