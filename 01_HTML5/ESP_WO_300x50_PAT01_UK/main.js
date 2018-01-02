@@ -256,8 +256,8 @@ function fadeOut(){
     //Fade Out Tween Code !!!!!!!
     TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
     TweenMax.to(['#logo'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0. });
-    TweenMax.to(['#f7_text1'], 0.6, {x:27, ease: Quint.easeOut, delay:0.6 });
-    TweenMax.to(['#f7_text2'], 0.6, {x:27, ease: Quint.easeOut, delay:0.6 });
+    TweenMax.to(['#f7_text1'], 0.6, {x:27, ease: Quint.easeOut, delay:1 });
+    TweenMax.to(['#f7_text2'], 0.6, {x:27, ease: Quint.easeOut, delay:1 });
 
     TweenMax.delayedCall(1, startAnim);
 }

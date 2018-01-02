@@ -318,6 +318,7 @@ function fadeOut(){
     //Fade Out Tween Code !!!!!!!
 
     TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
+    TweenMax.to(['#f7_text1','#f7_text2'], 0.6, {y:55, ease: Quint.easeOut, delay:1.0 });
 
     TweenMax.to(mountain_01, 2.30, {x:0, y:212}, Quint.easeIn);
     TweenMax.to(mountain_02, 1.25, {delay:0, x:2, y:207}, Quint.easeIn);
