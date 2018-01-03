@@ -8,7 +8,7 @@ numOfLoops=1;
 
 // Sets times for frame changes - steps
 //var frameDelays = [0,0.5,0.5,0.5,2.0];
-var frameDelays = [0,3.0,3.0,3.0,2.6,4.0];
+var frameDelays = [0,3.0,3.0,3.0,2.6];
 
 var svgScale = .7
 var svgWidth = 90;
