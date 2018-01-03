@@ -89,37 +89,123 @@ video {
     position: absolute;
     z-index: 50;
     display: block;
-    top:50px;
-    left:183px;
-    width:100px;
-    height:55px;
+    top:51px;
+    left:-100px;
+    width:132px;
+    height:73px;
     align: left;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 #mountain_02 {
     position: absolute;
     z-index: 50;
     display: block;
-    top:50px;
-    left:196px;
-    width:125px;
-    height:65px;
+    top:51px;
+    left:-23px;
+    width:132px;
+    height:73px;
     align: left;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 #mountain_03 {
     position: absolute;
     z-index: 50;
     display: block;
-    top:60px;
-    left:197px;
-    width:140px;
-    height:70px;
+    top:50px;
+    left:-2px;
+    width:115px;
+    height:60px;
+    align: left;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#mountain_04 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:0px;
+    width:150px;
+    height:75px;
+    align: left;
+}
+
+#mountain_05 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:55px;
+    left:281px;
+    width:110px;
+    height:55px;
+    align: left;
+}
+
+#mountain_06 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:51px;
+    left:210px;
+    width:132px;
+    height:73px;
+    align: left;
+}
+
+#mountain_07 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:52px;
+    left:206px;
+    width:115px;
+    height:60px;
+    align: left;
+}
+
+#mountain_08 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:80px;
+    width:150px;
+    height:75px;
+    align: left;
+    opacity:0.5;
+}
+
+#mountain_09 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:155px;
+    width:150px;
+    height:75px;
     align: left;
 }
 
 
-#f1_text1, #f1_text2, #f2_text1, #lineOne, #lineTwo, #f2_text2, #f3_text1, #f3_text2, #f4_icon, #f5_text1, #f5_text2, #f6_text1, #f6_text2, #f7_text1, #f7_text2, #cta{
+#f1_text1, #f1_text2, #f5_text1, #f5_text2, #f6_text1, #f7_text1, #f7_text2, #cta{
   opacity:0;
 }
 
@@ -202,19 +288,6 @@ video {
     color:#ffffff;
 }
 
-#f6_text2{
-    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
-    z-index: 300;
-    color:#fae500;
-    font-size: 28px;
-    letter-spacing: 1.3px;
-    line-height: 10px;
-    text-align: center;
-    right: 15px;
-    left: 102px;
-    width: 183px;
-    top: 81px;
-}
 
 
 #f7_text1 {

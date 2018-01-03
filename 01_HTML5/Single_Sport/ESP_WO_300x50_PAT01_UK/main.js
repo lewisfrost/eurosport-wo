@@ -7,8 +7,8 @@ loopcount=0;
 numOfLoops=1;
 
 // Sets times for frame changes - steps
-//var frameDelays = [0,.5,.5,.5,.5];
-var frameDelays = [0,3.0,3.0,3.0];
+//var frameDelays = [0,.5,.5,.5,.5,.5,.5,.5];
+var frameDelays = [0,3.0,3.0,3.0,2.6,4.0];
 
 var svgScale = .7
 var svgWidth = 90;
@@ -134,8 +134,30 @@ function init() {
 
 }
 
-
 function step1 (){
+
+          TweenMax.fromTo(mountain_01, 0.70, {x:0, y:0}, {delay:0.4, x:0, y:-73}, Quint.easeOut);
+          TweenMax.fromTo(mountain_02, 0.80, {x:0, y:0}, {delay:0.3, x:0, y:-73}, Quint.easeOut);
+          TweenMax.fromTo(mountain_03, 0.90, {x:0, y:0}, {delay:0.2, x:0, y:-60}, Quint.easeOut);
+          TweenMax.fromTo(mountain_04, 1.10, {x:0, y:0}, {delay:0.0, x:0, y:-60}, Quint.easeOut);
+          TweenMax.fromTo(mountain_05, 0.70, {x:0, y:0}, {delay:0.25, x:0, y:-56}, Quint.easeOut);
+          TweenMax.fromTo(mountain_06, 0.80, {x:0, y:0}, {delay:0.2, x:0, y:-72}, Quint.easeOut);
+          TweenMax.fromTo(mountain_07, 0.90, {x:2, y:0}, {delay:0.1, x:0, y:-60}, Quint.easeOut);
+          TweenMax.fromTo(mountain_08, 0.60, {x:0, y:0}, {delay:0.2, x:0, y:-66}, Quint.easeOut);
+          TweenMax.fromTo(mountain_09, 0.60, {x:0, y:0}, {delay:0.2, x:0, y:-72}, Quint.easeOut);
+
+          TweenMax.to(mountain_01, 0.90, {delay:2.70, x:0, y:73}, Quint.easeIn);
+          TweenMax.to(mountain_02, 1.05, {delay:2.70, x:0, y:73}, Quint.easeIn);
+          TweenMax.to(mountain_03, 1.25, {delay:2.70, x:0, y:60}, Quint.easeIn);
+          TweenMax.to(mountain_04, 1.7, {delay:2.60, x:0, y:60}, Quint.easeIn);
+          TweenMax.to(mountain_05, 0.90, {delay:2.60, x:0, y:56}, Quint.easeIn);
+          TweenMax.to(mountain_06, 1.00, {delay:2.60, x:0, y:72}, Quint.easeIn);
+          TweenMax.to(mountain_07, 1.25, {delay:2.60, x:0, y:60}, Quint.easeIn);
+          TweenMax.to(mountain_08, 1.7, {delay:2.60, x:0, y:66}, Quint.easeIn);
+          TweenMax.to(mountain_09, 1.7, {delay:2.60, x:0, y:72}, Quint.easeIn);
+}
+
+function step2 (){
 
            TweenMax.set('#f2_text1', {autoAlpha:1});
            TweenMax.set('#f2_text2', {autoAlpha:1});
@@ -143,10 +165,6 @@ function step1 (){
            TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
            TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
            TweenMax.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
-
-           TweenMax.set(['#logo'], {autoAlpha:1, scale:1.0});
-           TweenMax.set(['#logo'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.to(['#logo'], 0.6, {y:-50, ease: Quint.easeOut, delay:0.01 });
 
            TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
            TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
@@ -156,7 +174,7 @@ function step1 (){
 
 }
 
-function step2 (){
+function step3 (){
 
            TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
@@ -173,7 +191,7 @@ function step2 (){
            TweenMax.to(['#f5_text2'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.6 });
 }
 
-function step3 (){
+function step4 (){
 
            TweenMax.to(['#f4_icon','#f5_text1','#f5_text2'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
 
@@ -187,7 +205,7 @@ function step3 (){
 
 }
 
-function step4 (){
+function step5 (){
 
            var tl = new TimelineMax();
 
@@ -200,11 +218,11 @@ function step4 (){
 
            TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
-           TweenMax.to(['#f7_text1'], 0.6, {x:-35, ease: Quint.easeOut, delay:1.5 });
+           TweenMax.to(['#f7_text1'], 0.6, {x:-25, ease: Quint.easeOut, delay:1.5 });
 
            TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
-           TweenMax.to(['#f7_text2'], 0.6, {x:-35, ease: Quint.easeOut, delay:1.4 });
+           TweenMax.to(['#f7_text2'], 0.6, {x:-25, ease: Quint.easeOut, delay:1.4 });
 
            TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
            TweenMax.set(['#cta'], {autoAlpha:1, scale:0.001});
@@ -254,8 +272,9 @@ function endAnimation() {
 function fadeOut(){
 
     //Fade Out Tween Code !!!!!!!
-    TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
-    TweenMax.to(['#logo'], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0. });
+    TweenMax.to(['#f7_text1','#f7_text2','#cta'], 0.60, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
+    TweenMax.set(['#f7_text1'], {x:0, delay:1.5 });
+    TweenMax.set(['#f7_text2'], {x:0, delay:1.5 });
 
     TweenMax.delayedCall(1, startAnim);
 }

@@ -85,6 +85,126 @@ video {
     background-position: center;
 }
 
+#mountain_01 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:51px;
+    left:-100px;
+    width:132px;
+    height:73px;
+    align: left;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#mountain_02 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:51px;
+    left:-23px;
+    width:132px;
+    height:73px;
+    align: left;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#mountain_03 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:-2px;
+    width:115px;
+    height:60px;
+    align: left;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#mountain_04 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:0px;
+    width:150px;
+    height:75px;
+    align: left;
+}
+
+#mountain_05 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:55px;
+    left:261px;
+    width:110px;
+    height:55px;
+    align: left;
+}
+
+#mountain_06 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:51px;
+    left:190px;
+    width:132px;
+    height:73px;
+    align: left;
+}
+
+#mountain_07 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:52px;
+    left:186px;
+    width:115px;
+    height:60px;
+    align: left;
+}
+
+#mountain_08 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:70px;
+    width:150px;
+    height:75px;
+    align: left;
+    opacity:0.5;
+}
+
+#mountain_09 {
+    position: absolute;
+    z-index: 50;
+    display: block;
+    top:50px;
+    left:135px;
+    width:150px;
+    height:75px;
+    align: left;
+}
+
+
 #f1_text1, #f1_text2, #f2_text1, #lineOne, #lineTwo, #f2_text2, #f3_text1, #f3_text2, #f4_icon, #f5_text1, #f5_text2, #f6_text1, #f6_text2, #f7_text1, #f7_text2, #cta{
   opacity:0;
 }
@@ -126,8 +246,8 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 10px;
-    left: 148px;
+    top: 9px;
+    left: 145px;
     width:92px;
     height:12px;
 }
@@ -136,8 +256,8 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 23px;
-    left: 126px;
+    top: 22px;
+    left: 123px;
     width:136px;
     height:17px;
 }
@@ -148,8 +268,8 @@ video {
     display: block;
     width: 18px;
 	  height: 1px;
-	  top: 15px;
-	  left: 128px;
+	  top: 14px;
+	  left: 125px;
 	  background-color: rgba(255,255,255,1);
 }
 
@@ -159,8 +279,8 @@ video {
     display: block;
     width: 18px;
 	  height: 1px;
-	  top: 15px;
-	  left: 242px;
+	  top: 14px;
+	  left: 239px;
 	  background-color: rgba(255,255,255,1);
 }
 
@@ -185,7 +305,7 @@ video {
     top: 4px;
     width: 60px;
     height: 42px;
-    left: 99px;
+    left: 91px;
 }
 
 #f5_text1 {
@@ -196,9 +316,9 @@ video {
     line-height: 10px;
     text-align: center;
     top: 10px;
-    right: 15px;
-    left: 152px;
-    width: 143px;
+    right: 10px;
+    left: 155px;
+    width: 135px;
 }
 
 #f5_text2 {
@@ -210,9 +330,9 @@ video {
     top: 31px;
     color:#fae500;
     text-align: center;
-    right: 15px;
-    left: 152px;
-    width: 143px;
+    right: 10px;
+    left: 155px;
+    width: 135px;
     color: #fae500;
 }
 
@@ -224,16 +344,10 @@ video {
     letter-spacing: 1.3px;
     line-height: 10px;
     text-align: center;
-    right: 15px;
-    left: 102px;
-    width: 183px;
-    top: 60px;
-}
-
-#f7_text1, #f7_text2 {
-    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
-    z-index: 300;
-    color:#ffffff;
+    right: 5px;
+    left: 95px;
+    width: 200px;
+    top: 61px;
 }
 
 #f6_text2{
@@ -251,6 +365,12 @@ video {
 }
 
 
+#f7_text1, #f7_text2 {
+    font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
+    z-index: 300;
+    color:#ffffff;
+}
+
 #f7_text1 {
     z-index: 300;
     font-size: 20px;
@@ -260,7 +380,7 @@ video {
     top: 13px;
     right: 0px;
     left: 80px;
-    width: 220px;
+    width: 200px;
     color: #FFFFFF;
 }
 
@@ -273,7 +393,7 @@ video {
     top: 31px;
     right: 0px;
     left: 80px;
-    width: 220px;
+    width: 200px;
     color: #fae500;
 }
 
@@ -315,10 +435,11 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 61px;
+    top: 10px;
     left: 10px;
     width:76px;
     height:30px;
+    opacity:1;
 }
 
 #background-exit {
