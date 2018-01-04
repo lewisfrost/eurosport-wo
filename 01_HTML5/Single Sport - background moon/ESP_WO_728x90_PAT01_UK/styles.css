@@ -96,7 +96,7 @@ video {
     align: left;
 }
 
-#f1_text1, #f1_button, #f1_text2, #f2_text1, #lineOne, #lineTwo, #f2_text2, #f3_icon1, #f4_icon1, #f4_icon2, #f4_icon3, #f5_icon3, #f6_text1, #f7_text1, #f7_text2, #cta{
+#f1_text1, #f1_button, #f1_text2, #f2_text1, #lineOne, #lineTwo, #f2_text2, #f3_icon1, #f4_icon2, #f5_icon3, #f6_text1, #f7_text1, #f7_text2, #cta{
   opacity:0;
 }
 
@@ -203,19 +203,6 @@ video {
 
 }
 
-#f4_icon1 {
-    position: absolute;
-    z-index: 900;
-    display: block;
-    top: 4px;
-    width:154px;
-    height:82px;
-    left: 35%;
-    -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-            transform: translate(-50%,0);
-}
-
 #f4_icon2 {
     position: absolute;
     z-index: 900;
@@ -229,27 +216,14 @@ video {
             transform: translate(-50%,0);
 }
 
-#f4_icon3 {
-    position: absolute;
-    z-index: 900;
-    display: block;
-    top: 4px;
-    width:154px;
-    height:82px;
-    left: 65%;
-    -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-            transform: translate(-50%,0);
-}
-
 #f5_icon3 {
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
-    font-size: 34px;
-    line-height: 31px;
+    font-size: 43px;
+    line-height: 39px;
     letter-spacing: 1.3px;
     text-align: center;
-    top: 16px;
+    top: 10px;
     color:#ffffff;
     right: 120px;
     left: 120px;
@@ -263,10 +237,10 @@ video {
 #f6_text1{
     font-family: EurosportTHREEOLYMPICCYR, Helvetica, Arial, sans-serif;
     z-index: 300;
-    font-size: 34px;
+    font-size: 43px;
     letter-spacing: 1.3px;
-    line-height: 34px;
-    top: 58px;
+    line-height: 39px;
+    top: 40px;
     text-align: center;
     right: 120px;
     left: 120px;
@@ -286,22 +260,22 @@ video {
 }
 
 #f7_text1 {
-    font-size: 42px;
+    font-size: 39px;
     letter-spacing: 1.3px;
-    text-align: center;
-    top: 6px;
-    right: 120px;
-    left: 120px;
+    text-align: right;
+    top: 25px;
+    right: 0px;
+    right: 302px;
     width: 488px;
 }
 
 #f7_text2 {
-    font-size: 42px;
+    font-size: 39px;
     letter-spacing: 1.3px;
-    text-align: center;
-    top: 42px;
-    right: 120px;
-    left: 120px;
+    text-align: left;
+    top: 25px;
+    left: 436px;
+    width: 488px;
     color:#fae500;
 }
 
@@ -312,8 +286,8 @@ video {
     line-height: 37px;
     letter-spacing: 1.3px;
     text-align: center;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 28px;
+    padding-right: 28px;
     background-color: none;
     padding-top: 5px;
     padding-bottom: 0px;
@@ -326,7 +300,7 @@ video {
   top:21px;
   position: absolute;
   display: inline-block;
-  right: 200px;
+  right: 138px;
 }
 
 .retina {
