@@ -148,6 +148,8 @@ function step1 (){
            TweenMax.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
            TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
+           TweenMax.set(lineThree, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
+           TweenMax.set(lineFour, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
            TweenMax.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
            TweenMax.set(moon, {rotation:0.01, transformOrigin:"50% 10%"});
@@ -161,7 +163,7 @@ function step2 (){
            //Show Frame 1 Copy
 
            TweenMax.set('#f1_text1', {autoAlpha:1, scale:0.01});
-           TweenMax.set(f1_button, {autoAlpha:1, scale:0.01});
+           TweenMax.set(f1_button, {autoAlpha:1, scale:0.001});
            TweenMax.set('#f1_text2', {autoAlpha:1});
 
            TweenMax.to('#f1_text1', 0.8, {scale:1, ease: Bounce.easeOut, delay:0.01 });
@@ -180,21 +182,23 @@ function step3 (){
 
            //Show Frame 2 Copy
 
-           TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
-           TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
-           TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
+           TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.001}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
+           TweenMax.to(lineOne, 0.8, {delay:0.2, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
+           TweenMax.to(lineTwo, 0.8, {delay:0.2, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
 
-           TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
+           TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.001}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
+           TweenMax.to(lineThree, 0.8, {delay:1.1, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
+           TweenMax.to(lineFour, 0.8, {delay:1.1, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
+
 }
 
 function step4 (){
 
-           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
+           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo,lineThree,lineFour], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
            TweenMax.set(['#f3_icon1'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f3_icon1'], {autoAlpha:1, scale:0.01});
            TweenMax.to(['#f3_icon1'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
-
 }
 
 function step5 (){
@@ -202,7 +206,7 @@ function step5 (){
            TweenMax.to(['#f3_icon1'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
 
            TweenMax.set(['#f4_icon2'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(['#f4_icon2'], {autoAlpha:1, scale:0.01});
+           TweenMax.set(['#f4_icon2'], {autoAlpha:1, scale:0.001});
            TweenMax.to(['#f4_icon2'], 0.7, {scale:1, ease: Bounce.easeOut, delay:0.3 });
 
 }
@@ -245,7 +249,9 @@ function step9 (){
            TweenMax.to(['#f7_text1'], 0.01, {autoAlpha:0, ease: Quint.easeOut, delay:0.5 });
            TweenMax.to(['#f7_text1'], 0.01, {y:30, ease: Quint.easeOut, delay:0.6 });
 
+
            //Show Frame 4
+
            TweenMax.set(['#f8_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f8_text1'], {autoAlpha:1 , delay:0.5});
            TweenMax.to(['#f8_text1'], 0.6, {y:-35, ease: Quint.easeOut, delay:1.2 });
@@ -303,7 +309,7 @@ function fadeOut(){
 
     //Fade Out Tween Code !!!!!!!
 
-    TweenMax.to(['#f8_text1','#f8_text2','#cta',moon], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
+    TweenMax.to(['#f8_text1','#f8_text2','#cta', moon], 0.6, {autoAlpha:0, ease: Quint.easeOut, delay:0 });
     TweenMax.set(['#f8_text1','#f8_text2'], {y:0, delay:2.0});
 
     TweenMax.delayedCall(1, startAnim);
