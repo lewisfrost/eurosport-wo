@@ -105,9 +105,9 @@ function init() {
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_icon1 = "ICE HOCKEY";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EVERY SECOND<br/>OF THE ACTION";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EVERY SECOND<br>OF THE ACTION";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1 = "EXCLUSIVELY ON<br/>EUROSPORT PLAYER";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1 = "EXCLUSIVELY ON<br>EUROSPORT PLAYER";
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f8_text1 = "5 DAY";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f8_text2 = "FREE TRIAL";

@@ -338,11 +338,12 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    top: 530px;
-    left: 69px;
-    width:160px;
-    height:60px;
+    top: 494px;
+    left: 25px;
+    width:250px;
+    height:100px;
 }
+
 
 #background-exit {
     width:100%;
