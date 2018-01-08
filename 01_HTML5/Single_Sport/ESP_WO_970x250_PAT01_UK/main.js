@@ -105,9 +105,9 @@ function init() {
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f3_icon1 = "ICE HOCKEY";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3 = "EVERY SECOND OF THE<br/>ICE HOCKEY";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f5_icon3 = "EVERY SECOND OF THE<br>ICE HOCKEY";
 
-    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EXCLUSIVELY ON<br/>EUROSPORT PLAYER";
+    devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f6_text1 = "EXCLUSIVELY ON<br>EUROSPORT PLAYER";
 
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text1 = "ICE HOCKEY PASS";
     devDynamicContent.BundesligaDynamicGameSpecific_300x250[0].f7_text2 = "€9.99";
@@ -252,11 +252,11 @@ function step8 (){
 
            TweenMax.set(['#f7_text1'], {rotation:0.01,transformOrigin:"50% 40%"});
            TweenMax.set(['#f7_text1'], {autoAlpha:1 , delay:0.5});
-           TweenMax.to(['#f7_text1'], 0.6, {y:-30, ease: Quint.easeOut, delay:1.2 });
+           TweenMax.to(['#f7_text1'], 0.6, {y:-33, ease: Quint.easeOut, delay:1.2 });
 
            TweenMax.set(['#f7_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f7_text2'], {autoAlpha:1 ,delay:0.5});
-           TweenMax.to(['#f7_text2'], 0.6, {y:-30, ease: Quint.easeOut, delay:1.1 });
+           TweenMax.to(['#f7_text2'], 0.6, {y:-33, ease: Quint.easeOut, delay:1.1 });
 
            TweenMax.set(['#cta'], {rotation:0.01,transformOrigin:"50% 35%"});
            TweenMax.set(['#cta'], {autoAlpha:1, scale:0.001});

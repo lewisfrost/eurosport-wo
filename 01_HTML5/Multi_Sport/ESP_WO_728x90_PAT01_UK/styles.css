@@ -349,6 +349,7 @@ video {
           transform-origin: left top;
 }
 
+/*
 #logo {
     position: absolute;
     z-index: 900;
@@ -357,6 +358,17 @@ video {
     left: 23px;
     width:118px;
     height:45px;
+}
+*/
+
+#logo {
+    position: absolute;
+    z-index: 900;
+    display: block;
+    top: 18px;
+    left: 18px;
+    width:132px;
+    height:60px;
 }
 
 #background-exit {
