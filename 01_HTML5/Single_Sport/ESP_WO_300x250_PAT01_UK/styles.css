@@ -162,9 +162,12 @@ video {
     z-index: 900;
     display: block;
     top: 63px;
-    left: 65px;
-    width:170px;
+    width:264px;
     height:32px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
 }
 
 #f2_text2 {
@@ -172,9 +175,13 @@ video {
     z-index: 900;
     display: block;
     top: 95px;
-    left: 18px;
     width:264px;
     height:32px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+
 }
 
 #lineOne {

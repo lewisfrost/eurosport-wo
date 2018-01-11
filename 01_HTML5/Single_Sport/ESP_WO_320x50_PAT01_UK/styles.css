@@ -247,9 +247,13 @@ video {
     z-index: 900;
     display: block;
     top: 9px;
-    left: 155px;
-    width:92px;
+    width:136px;
     height:12px;
+    margin-left:42px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
 }
 
 #f2_text2 {
@@ -257,9 +261,13 @@ video {
     z-index: 900;
     display: block;
     top: 22px;
-    left: 133px;
     width:136px;
     height:17px;
+    margin-left:42px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
 }
 
 #lineOne {
@@ -404,8 +412,8 @@ video {
     line-height: 13px;
     letter-spacing: 1.2px;
     text-align: center;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 4px;
+    padding-right: 4px;
     background-color: none;
     padding-top: 5px;
     padding-bottom: 1px;

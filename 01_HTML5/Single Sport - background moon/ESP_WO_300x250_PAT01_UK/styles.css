@@ -109,29 +109,42 @@ video {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#f1_text1, #f1_button,{
+    font-family: EurosportPYEONGCHANGCYR, Helvetica, Arial, sans-serif;
+    letter-spacing: 8.0px;
+    z-index: 900;
+}
 #f1_text1 {
+    position:relative;
     font-family: EurosportPYEONGCHANGCYR, Helvetica, Arial, sans-serif;
     font-size: 37px;
     line-height: 36px;
     letter-spacing: 2.0px;
-    z-index: 300;
-    top: 39px;
-    text-align: center;
-    width:300px;
-    height:50px;
-}
-
-#f1_button {
-    position: absolute;
+    padding-right: 16px;
     z-index: 900;
-    display: block;
-    z-index: 300;
-    top: 43px;
+    top: 0px;
+    text-align: right;
+    float:left;
+}
+#f1_button {
+    position:relative;
+    z-index: 900;
+    padding-right: 10px;
     width: 20px;
-    left: 34%;
-    -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-            transform: translate(-50%,0);
+    top: 3px;
+    text-align: left;
+    float:left;
+}
+#firstFrameWrap{
+   top:37px;
+   left:15px;
+   right:15px;
+   width:270px;
+   text-align: center;
+}
+#firstFrameTextWrap{
+   position:relative;
+   display: inline-block;
 }
 
 #f1_text2 {

@@ -109,31 +109,49 @@ video {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#f1_text1 {
+#f1_text1, #f1_button,{
     font-family: EurosportPYEONGCHANGCYR, Helvetica, Arial, sans-serif;
-    font-size: 58px;
-    line-height: 47px;
-    letter-spacing: 2.0px;
-    z-index: 300;
-    top: 50px;
-    left: 7px;
-    text-align: center;
-    width:970px;
-    height:50px;
+    letter-spacing: 8.0px;
+    z-index: 900;
 }
 
-#f1_button {
-    position: absolute;
+#f1_text1 {
+    position:relative;
+    font-family: EurosportPYEONGCHANGCYR, Helvetica, Arial, sans-serif;
     z-index: 900;
-    display: block;
-    z-index: 300;
-    top: 54px;
-    width: 30px;
-    left: 43%;
-    -webkit-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-            transform: translate(-50%,0);
+    letter-spacing: 8.0px;
+    font-size: 58px;
+    line-height: 17px;
+    top: 50px;
+    text-align: right;
+    float:left;
 }
+
+#f1_button  {
+    position:relative;
+    line-height: 44px;
+    padding-right: 14px;
+    z-index: 900;
+    letter-spacing: 8.0px;
+    top: 39px;
+    width: 30px;
+    text-align: left;
+    float:left;
+}
+
+#firstFrameWrap{
+   top:16px;
+   left:210px;
+   right:210px;
+   width:550px;
+   text-align: center;
+}
+
+#firstFrameTextWrap{
+   position:relative;
+   display: inline-block;
+}
+
 
 #f1_text2 {
     font-family: EurosportPYEONGCHANGCYR, Helvetica, Arial, sans-serif;

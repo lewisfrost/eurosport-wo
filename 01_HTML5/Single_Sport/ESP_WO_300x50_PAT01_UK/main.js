@@ -162,13 +162,13 @@ function step2 (){
            TweenMax.set('#f2_text1', {autoAlpha:1});
            TweenMax.set('#f2_text2', {autoAlpha:1});
            TweenMax.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
-           TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
+           //TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
+          // TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
            TweenMax.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
            TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
-           TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
-           TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
+          // TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
+          // TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
 
            TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
 
@@ -176,7 +176,8 @@ function step2 (){
 
 function step3 (){
 
-           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
+           TweenMax.to(['#f2_text1','#f2_text2'], 0.2, {autoAlpha:0,ease:Power4.easeOut})
+          // TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
            TweenMax.set(['#f4_icon'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f4_icon'], {autoAlpha:1, scale:0.01});
