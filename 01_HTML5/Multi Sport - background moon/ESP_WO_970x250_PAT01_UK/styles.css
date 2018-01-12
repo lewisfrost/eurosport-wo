@@ -42,7 +42,7 @@ video {
 }
 
 #loading_dc, #main_container {
-
+    left:0;
     width:970px;
     height:250px;
 }
@@ -380,4 +380,5 @@ video {
     cursor:pointer;
     opacity:0;
     background-color:black;
+    z-index: 999999;
 }

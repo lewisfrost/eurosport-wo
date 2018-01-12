@@ -289,4 +289,6 @@ video {
     cursor:pointer;
     opacity:0;
     background-color:black;
+    z-index: 999999;
+
 }
