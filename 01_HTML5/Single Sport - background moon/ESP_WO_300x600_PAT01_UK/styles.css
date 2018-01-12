@@ -168,22 +168,28 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    left: 77px;
-    right: 77px;
     width: 146px;
-    height:140px;
-    top: 63px;
+    height:190px;
+    top: 45px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+
 }
 
 #f2_text2 {
     position: absolute;
     z-index: 900;
     display: block;
-    left: 77px;
-    right: 77px;
     width: 146px;
-    height:180px;
+    height:190px;
     top: 233px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+
 }
 
 #lineOne {

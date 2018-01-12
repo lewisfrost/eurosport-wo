@@ -145,8 +145,8 @@ function step1 (){
            TweenMax.set(['#f1_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
            TweenMax.set(['#f2_text1'], {rotation:0.01,transformOrigin:"50% 50%"});
-           TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
-           TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
+           //TweenMax.set(lineOne, {autoAlpha:0, scaleX:0.05, transformOrigin:"right"})
+           //TweenMax.set(lineTwo, {autoAlpha:0, scaleX:0.05, transformOrigin:"left"})
            TweenMax.set(['#f2_text2'], {rotation:0.01,transformOrigin:"50% 50%"});
 
            TweenMax.set(moon, {rotation:0.01, transformOrigin:"20% 50%"});
@@ -179,8 +179,8 @@ function step3 (){
            //Show Frame 2 Copy
 
            TweenMax.fromTo('#f2_text1', 0.3, {scale: 0.01}, {delay:0.1, scale:1.0}, {ease: Quint.easeOut });
-           TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
-           TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
+           //TweenMax.to(lineOne, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"right"}, {ease: Quint.easeInOut });
+           //TweenMax.to(lineTwo, 0.8, {delay:0.35, autoAlpha:1, scaleX:1.0, transformOrigin:"left"}, {ease: Quint.easeInOut });
 
            TweenMax.fromTo('#f2_text2', 0.3, {scale: 0.01}, {delay:1.0, scale:1.0}, {ease: Quint.easeOut });
 }
@@ -189,7 +189,8 @@ function step3 (){
 function step4 (){
 
            //TweenMax.to(['#f3_icon1'], 0.6, {scale:0.01, autoAlpha:0, ease: Quint.easeOut, delay:0 });
-           TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
+           TweenMax.to(['#f2_text1','#f2_text2'], 0.2, {autoAlpha:0,ease:Power4.easeOut})
+           //TweenMax.to(['#f2_text1','#f2_text2',lineOne,lineTwo], 0.2, {autoAlpha:0,ease:Power4.easeOut})
 
            TweenMax.set(['#f4_icon1','#f4_icon2','#f4_icon3'], {rotation:0.01,transformOrigin:"50% 50%"});
            TweenMax.set(['#f4_icon1','#f4_icon2','#f4_icon3'], {autoAlpha:1, scale:0.01});

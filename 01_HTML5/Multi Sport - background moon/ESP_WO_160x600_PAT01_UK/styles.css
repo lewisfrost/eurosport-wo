@@ -167,23 +167,28 @@ video {
     position: absolute;
     z-index: 900;
     display: block;
-    left: 29px;
-    right: 29px;
     width: 102px;
-    height:110px;
-    top: 60px;
+    height:130px;
+    top: 52px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
 }
 
 #f2_text2 {
     position: absolute;
     z-index: 900;
     display: block;
-    left: 29px;
-    right: 29px;
     width: 102px;
     height:130px;
     top: 185px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
 }
+
 
 #lineOne {
     position: absolute;
